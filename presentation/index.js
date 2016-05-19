@@ -131,7 +131,10 @@ export default class Presentation extends React.Component {
             </List>
       	  </Slide>
 
-<!-- ---- --- REDIS ---- --- --->
+
+
+
+
 
           <Slide transition={["slide", "spin"]} bgColor="primary" notes="Persist to disk is actually pretty fast & lightweight on I/O.<br />You can set it to write once every 300s for example.">
             <Heading size={2}  caps textColor="white">
@@ -213,17 +216,20 @@ export default class Presentation extends React.Component {
             <Heading size={4} caps textColor="white">
               API side, using the cache:
             </Heading>
-            <Image src={images.dynamoImplementation.replace("/", "")} margin="0px auto 0px" />
+            <Image src={images.dynamoImplementation.replace("/", "")} margin="0 0 0 -87px" width="1100" />
             
             <Heading size={4} caps textColor="white">
               CMS side, invalidating the cache:
             </Heading>
-            <Image src={images.dynamoInvalidation.replace("/", "")} margin="0px auto 0px" />
+            <Image src={images.dynamoInvalidation.replace("/", "")} margin="0 0 0 -87px" width="1100" />
           </Slide>
 
           <Slide transition={["spin", "slide"]} bgColor="tertiary">
             <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
               Woohoo. All done.
+            </Heading>
+            <Heading size={4} textColor="#aaa">
+              ಠ_ಠ
             </Heading>
           </Slide>
         </Deck>
