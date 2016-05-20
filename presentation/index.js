@@ -39,6 +39,7 @@ require("spectacle/lib/themes/default/index.css");
 const images = {
   dynamoImplementation: require("../assets/dynamo-cache-implementation.png"),
   dynamoInvalidation: require("../assets/dynamo-cache-invalidation.png"),
+  plusCache: require("../assets/plus-cache.png"),
 };
 
 preloader(images);
@@ -130,6 +131,17 @@ export default class Presentation extends React.Component {
               <ListItem>Automatic cache invalidation & warming</ListItem>
             </List>
       	  </Slide>
+
+          <Slide transition={["slide"]} bgColor="primary" notes="- Setting the cache duration with statements<br />">
+            <Heading size={2}  caps textColor="white">
+              Varnish
+            </Heading>
+            <Heading size={2} fit caps textColor="black">
+              example setup: Plus
+            </Heading>
+            
+            <Image src={images.plusCache.replace("/", "")} margin="0 0 0 -87px" width="1100" />
+          </Slide>
 
 
 
