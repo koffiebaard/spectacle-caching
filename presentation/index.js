@@ -140,7 +140,7 @@ export default class Presentation extends React.Component {
               example setup: Plus
             </Heading>
             
-            <Image src={images.plusCache.replace("/", "")} margin="0 0 0 -87px" width="1100" />
+            <Image src={images.plusCache.replace("/", "")} margin="0" />
           </Slide>
 
 
